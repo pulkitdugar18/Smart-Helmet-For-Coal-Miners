@@ -54,7 +54,7 @@ void temperature() {
   Serial.print(h);
   Serial.println("% ");
   delay(2000);  //2 sec delay
-  if (temp > 30) {
+  if (t > 30) {
     Serial.println("*** Warning: Temperature is above 30C ***");
     digitalWrite(buzzer, HIGH);
     delay(1000);
